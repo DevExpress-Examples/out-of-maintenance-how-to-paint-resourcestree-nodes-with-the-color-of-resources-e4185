@@ -1,0 +1,27 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>How to paint ResourcesTree nodes with the color of resources - Developer Express Example</title>
+<style>
+html, body, form 
+{
+	font-family: Tahoma, Arial, Verdana;
+    font-size: small;
+    color: #303440;
+}
+h1 {
+	font-size: 125%;
+	font-weight: normal;
+	color: Black;
+	letter-spacing: 101%;
+}
+</style>
+</head>
+<body>
+<h1>Developer Express Example<br />How to paint ResourcesTree nodes with the color of resources</h1>
+<p>This example illustrates how to customize ResourcesTree (http://documentation.devexpress.com/#WindowsForms/clsDevExpressXtraSchedulerUIResourcesTreetopic) nodes painting so that its nodes have the same color as corresponding resources. First of all, it should be especially noted that there is no appropriate method to achieve this result when default resource color schemas are used (see SchedulerControl.ResourceColorSchemas Property (http://documentation.devexpress.com/#WindowsForms/DevExpressXtraSchedulerSchedulerControl_ResourceColorSchemastopic)) because their indexes might not correspond resource indexes (especially if a complex master-detail hierarchy of resource is used). So, you need to specify resource colors explicitely. In this example, we have mapped the Resource.Color Property (http://documentation.devexpress.com/#CoreLibraries/DevExpressXtraSchedulerResource_Colortopic) to the "Color" column in "Resources" table. Then, we retrieve the current resource color in the TreeList.CustomDrawNodeCell Event (http://documentation.devexpress.com/#WindowsForms/DevExpressXtraTreeListTreeList_CustomDrawNodeCelltopic) and assign it to the e.Appearance.BackColor parameter of this event.
+Here is a screenshot that illustrates a sample application in action:</p>
+<p>You can find sample updates and versions for different programming languages here:<br /><a href="http://www.devexpress.com/example=E4185">http://www.devexpress.com/example=E4185</a>.</p>
+</body>
+</html>
